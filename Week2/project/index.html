@@ -5,10 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="app">
+
+      <h1>Pomodoro Clock</h1>
+      <div id="pomodoro">
+        <input type="image" id="up" src="icons/arrow-up-circle.svg">
+        <span id="pomodoroTime"></span>
+        <input type="image" id="down" src="icons/arrow-down-circle.svg">
+      </div>
+
+      
+      <span id="remainingTime"></span>
+    
+      <div id="audio">
+        <input type="image" id="play" src="icons/play-circle.svg">
+        <input type="image" id="pause" src="icons/pause-circle.svg">
+        <input type="image" id="stop" src="icons/stop-circle.svg">
+      </div>
 
   </div>
   <script src="index.js"></script>

@@ -1,15 +1,18 @@
-/**
- 
- ** Exercise 5: My favorite hobbies **
- 
- Write a program that outputs each of these inside an HTML file
- Create an HTML and JavaScript file, link them together
- Use the map and / or forEach function to put each hobby into a list item
- Put the list items in an unordered list
- */
+"use strict";
 
 function createHTMLList(arr) {
-  // your code goes in here
+
+  const body = document.body;
+  const hoppyList = document.createElement("ul"); //add unordered list
+  body.appendChild(hoppyList); // attach the list to the body
+
+  arr.forEach(element => {
+    const hoppyItems = document.createElement("li"); // add item to the list 
+    hoppyList.appendChild(hoppyItems); //attach the item to the list
+
+    hoppyItems.textContent = element; // add text to that item
+
+  });
 }
 
 const myHobbies = [
@@ -19,3 +22,5 @@ const myHobbies = [
   'Hanging out with friends',
   'Going to the gym',
 ];
+
+createHTMLList(myHobbies);

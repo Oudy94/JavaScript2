@@ -1,15 +1,7 @@
-/**
- 
- ** Exercise 4: Collective age **
- 
- Have you ever wondered how old the HackYourFuture team members are ? Or better yet : what the collective age is ? Let 's find out!
-
- Write a function that calculates the combined age of every member
- Avoid using for loop or forEach.
- */
-
 function collectiveAge(people) {
-  // return the sum of age for all the people
+  return people
+  .map(ages => ages.age) // select age from hackYourFutureMembers
+  .reduce((total, ages) => total + ages ,0); // sum it all up 
 }
 
 const hackYourFutureMembers = [{
@@ -30,4 +22,4 @@ const hackYourFutureMembers = [{
   },
 ];
 
-console.log("The collective age of the HYF team is: " + collectiveMembers(hackYourFutureMembers));
+console.log("The collective age of the HYF team is: " + collectiveAge(hackYourFutureMembers));

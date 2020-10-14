@@ -11,10 +11,8 @@ const quotes = [
 const quoteField = document.querySelector(".quotes");
 
 //add h2 and h3 tags
-const quoteText = document.createElement("h2");
-const authorText = document.createElement("h3");
-quoteField.appendChild(quoteText);
-quoteField.appendChild(authorText);
+const quoteText = document.querySelector("h2");
+const authorText = document.querySelector("h3");
 
 //select random quote
 let randomQuote = quotes[Math.floor(Math.random() * 5)];

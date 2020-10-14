@@ -39,7 +39,8 @@ for (const book of books){
     listBooksItems.appendChild(bookImage);
 
     //check if already read the book or no
-    (book.alreadyRead) ? listBooksItems.style.backgroundColor = "green": listBooksItems.style.backgroundColor = "red" ;
+    //(book.alreadyRead) ? listBooksItems.style.backgroundColor = "green": listBooksItems.style.backgroundColor = "red" ;
+    listBooksItems.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
 
 }
 

@@ -16,7 +16,6 @@ addInformation("hometown", "Jeddah");
 //Add class list-item in "li"
 const list =document.querySelectorAll("li");
 for (let i =0; i < list.length; i++){
-    const list = document.getElementsByTagName("li");
     list[i].setAttribute("class", "list-item"); 
     //list[i].classList.add("list-item"); // can use any
 }

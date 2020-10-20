@@ -1,10 +1,12 @@
-/**
+/*
 
-** Exercise 4: Guess more **
+In the first function the parameter passed is a number and numbers as its known a primitive type which is accessed by value,
+Thus when passing primitive variable to a function you actually pass its copy. Therefore any changes that happens to the 
+arguments inside the function does not affect the passing variables outside of the function.
 
-Look at the bellow code snippet.
-Can you guess the output? 
-Write out your reasoning in 50 words or less.
+Unlike the second function the parameter passed is an object and objects are reference type which is accessed by reference,
+Thus when passing reference variable to a function you actually pass its refrence. Therefore any changes that happens to the 
+arguments inside the function will affect the passing variables outside of the function.
 
 */
 

@@ -1,19 +1,17 @@
-/**
- 
- ** Exercise 1: Add Six **
- 
-Declare a function called `createBase`.The function takes a number as a parameter and
-return a closure, that adds a number to the base number argument.
+"use strict";
 
-Call the function three times. The return values should be:
- 15, 24, 33
+function createBase(numbersix) {
 
- */
+  function addnumbersix(number) {
+    return number + numbersix;
+  }
 
-function createBase( /* ???? */ ) {
-  // Put here your logic...
+  return addnumbersix;
 }
 
 const addSix = createBase(6);
 
-// Put here your function calls...
+console.log(addSix(9));
+console.log(addSix(18));
+console.log(addSix(27));
+

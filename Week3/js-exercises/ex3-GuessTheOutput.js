@@ -1,21 +1,19 @@
-/**
 
-** Exercise 3: Guess the output **
+/*
 
-Look at the bellow code snippet.
-Can you guess the output? 
-Write out your reasoning in 50 words or less.
+Obviously, the output will be 12 and the reason why is that in 'x' function scope the variable 'a' declared in the global 
+scope has been reassigned.
 
 */
 
-
-
+"use strict"
 let a = 10;
 const x = (function () {
-  a = 12;
+  let a = 12;
   return function () {
-    alert(a);
+    console.log(a);
   };
 })();
 
+console.log(a);
 x();
